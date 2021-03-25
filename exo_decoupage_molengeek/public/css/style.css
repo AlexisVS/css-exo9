@@ -1,0 +1,198 @@
+#newsletter {
+  background-color: purple;
+}
+
+#newsletter>.logo>img {
+  width: 50px;
+}
+
+.logo {
+  display: inline-block;
+}
+
+#champs_newsletter div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------------------------------ x ----------------------------------- */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* --------------------------------- header --------------------------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  flex-direction: column;
+}
+
+/* newsletters */
+#newsletter {
+  width: 100vw;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#newsletter>.logo {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  filter: brightness(3.5);
+}
+
+#champs_newsletter>div>span,
+#champs_newsletter>div>input,
+#champs_newsletter>div>button {
+  margin: 0 5px;
+}
+
+#champs_newsletter>div>span {
+  color: rgb(209, 209, 209);
+}
+
+#champs_newsletter>div>input {
+  background-color: aliceblue;
+  color: rgb(75, 75, 75);
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  font-style: italic;
+}
+
+#champs_newsletter>div>button {
+  background-color: rgb(89, 252, 89);
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  color: white;
+}
+
+header>nav {
+  display: flex;
+  width: 100vw;
+}
+header  > nav > .logo {
+  
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(223, 223, 223);
+  padding: 35px 0;
+}
+header>nav>.logo>img {
+  width: 150px;
+}
+header > nav > .menu {
+  display: flex;
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+header>nav>.menu>ul {
+  display: flex;
+  list-style: none;
+  width: calc(100vw - 350px);
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header>nav>.menu>ul>li {
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+header>nav>.menu>ul>li>a {
+  color: black;
+  text-decoration: none;
+}
+
+header>nav>.menu>ul>li>a:hover,
+header>nav>.menu>ul>li>a:active {
+  border-bottom: 5px solid black;
+}
+
+/* -------------------------------- container ------------------------------- */
+#contenu {
+  width: 80vw;
+  margin: 0 auto;
+}
+#contenu * {
+  font-family: sans-serif;
+}
+#contenu>h1 {
+  font-weight: 200;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+#contenu>h1::after {
+  content: '';
+  display: block;
+  position: relative;
+  width: 75px;
+  height: 2px;
+  background-color: rgb(176, 25, 206);
+  margin: 0 auto;
+  margin-top: 50px;
+}
+#contenu p {
+  line-height: 2rem;
+  font-size: 1.15rem;
+}
+#contenu ul {
+  line-height: 2rem;
+  list-style: none;
+}
+#contenu > ul > li::before {
+  vertical-align: middle;
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(176, 25, 206); /* Change the color */
+  font-weight: bold;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em;
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+#contenu h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+/* --------------------------------- footer --------------------------------- */
+
+footer {
+  background-color: #222;
+  color: white;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+#section {
+  display: flex;
+  justify-content:center ;
+}
+#section > div {
+  margin: 0 15px;
+  padding-top: 50px;
+}
+footer > p {
+  text-align: center;
+}
